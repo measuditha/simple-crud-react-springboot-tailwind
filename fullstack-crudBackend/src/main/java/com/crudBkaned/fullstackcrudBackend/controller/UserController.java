@@ -3,14 +3,12 @@ package com.crudBkaned.fullstackcrudBackend.controller;
 import com.crudBkaned.fullstackcrudBackend.model.User;
 import com.crudBkaned.fullstackcrudBackend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://localhost:5173")
 public class UserController {
     @Autowired
     private UserRepository userRepository;

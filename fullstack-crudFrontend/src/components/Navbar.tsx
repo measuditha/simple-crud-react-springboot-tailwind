@@ -1,4 +1,4 @@
-import React from 'react'
+import {Link} from "react-router-dom";
 
 export const Navbar = () => {
     return (
@@ -8,9 +8,9 @@ export const Navbar = () => {
             </div>
             <div className=" md:flex md:items-center md:w-auto w-full" id="menu">
                 <div className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                    <button className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
+                    <Link to="/addUsers" className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
                         ADD USER
-                    </button>
+                    </Link>
                 </div>
             </div>
         </header>
